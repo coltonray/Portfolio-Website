@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Java Developer Portfolio</title>
-	<link rel="stylesheet" href="style.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Java Developer Portfolio</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Java Developer Portfolio</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#experience">Experience</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	
-	<main>
-		<section id="about">
-			<h1>About Me</h1>
-			<p>I am a Java developer with X years of experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec faucibus ipsum. Proin quis purus euismod, facilisis dolor in, eleifend augue. Integer eget eros euismod, vestibulum nulla ac, congue elit.</p>
-		</section>
+	<main class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<section id="about">
+					<h1>About Me</h1>
+					<p>I am a Java developer with X years of experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec faucibus ipsum. Proin quis purus euismod, facilisis dolor in, eleifend augue. Integer eget eros euismod, vestibulum nulla ac, congue elit.</p>
+				</section>
 		
-		<section id="experience">
-			<h1>Experience</h1>
-			<ul>
-				<li>
-					<h2>Company A</h2>
-					<p>Java Developer, 2020 - present</p>
+				<section id="experience">
+					<h1>Experience</h1>
 					<ul>
-						<li>Developed and maintained Java applications</li>
-						<li>Collaborated with team members to design and implement new features</li>
-						<li>Improved application performance through optimization</li>
+						<li>
+							<h2>Company A</h2>
+							<p>Java Developer, 2020 - present</p>
+							<ul>
+								<li>Developed and maintained Java applications</li>
+								<li>Collaborated with team members to design and implement new features</li>
+								<li>Improved application performance through optimization</li>
+							</ul>
+						</li>
+						<li>
+							<h2>Company B</h2>
+							<p>Java Developer, 2018 - 2020</p>
+							<ul>
+								<li>Developed Java applications for clients in various industries</li>
+								<li>Worked with clients to gather requirements and specifications</li>
+								<li>Managed projects from start to finish</li>
+							</ul>
+						</li>
 					</ul>
-				</li>
-				<li>
-					<h2>Company B</h2>
-					<p>Java Developer, 2018 - 2020</p>
+				</section>
+				<section id="projects">
+					<h1>Projects</h1>
 					<ul>
-						<li>Developed Java applications for clients in various industries</li>
-						<li>Worked with clients to gather requirements and specifications</li>
-						<li>Managed projects from start to finish</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
-		
-		<section id="projects">
-			<h1>Projects</h1>
-			<ul>
 				<li>
 					<h2>Project A</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec faucibus ipsum. Proin quis purus euismod, facilisis dolor in, eleifend augue. Integer eget eros euismod, vestibulum nulla ac, congue elit.</p>
@@ -59,24 +75,32 @@
 					<h2>Project B</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec faucibus ipsum. Proin quis purus euismod, facilisis dolor in, eleifend augue. Integer eget eros euismod, vestibulum nulla ac, congue elit.</p>
 				</li>
-			</ul>
-		</section>
-		
-		<section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-        </section>
+				</ul>
+				</section>
+				
+				<section id="contact">
+					<h2>Contact Me</h2>
+					<form>
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" class="form-control" id="name" name="name" required>
+						</div>
+				
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="email" name="email" required>
+						</div>
+				
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+						</div>
+				
+						<button type="submit" class="btn btn-primary">Send</button>
+					</form>
+				</section>
     </main>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
